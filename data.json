@@ -1,0 +1,44 @@
+[
+  {
+    "img": "./img/gitarre.jpg",
+    "headline": "Harley Benton",
+    "description": "Schöne E Gitarre",
+    "price": "50"
+  },
+  {
+    "img": "./img/drum.png",
+    "headline": "Sonor B12",
+    "description": "Lautes Akustik Drumset",
+    "price": "100"
+  },
+  {
+    "img": "./img/violine.webp",
+    "headline": "Violingarnitur",
+    "description": "Violine aus Holz",
+    "price": "150"
+  },
+  {
+    "img": "./img/mischpult.webp",
+    "headline": "Behringer Mischpult",
+    "description": "Elektro Music",
+    "price": "120"
+  },
+  {
+    "img": "./img/songbook.webp",
+    "headline": "Songbook",
+    "description": "Alle Hits",
+    "price": "15"
+  },
+  {
+    "img": "./img/software.webp",
+    "headline": "AmpliTube 5",
+    "description": "Licence Code",
+    "price": "300"
+  }
+
+
+
+
+
+
+]

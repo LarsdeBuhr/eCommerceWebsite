@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mein Webshop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- HEADER start-->
+  <header>
+    <h1>MusicStore Webshop</h1>
+    <!-- Einkaufswagen Icon mit Anzahl -->
+    <img src="./img/cart.png" alt="shoppingCart" class="cart">
+    <p class="cartAmount"></p>
+  </header>
+  <!-- HEADER end -->
+
+  <!-- MAIN start-->
+  <main>
+    <!-- Banner start-->
+    <section class="slideshowOutside">
+      <div class="slideshowInside">
+        <div class="slide">
+          <img src="./img/banner1.jpg" alt="digital Music" class="slide img">
+          <img src="./img/banner2.webp" alt="acustic Music" class="slide img hidden">
+          <img src="./img/banner3.jpg" alt="Live Music" class="slide img hidden">
+          <p class="arrow left">&laquo;</p>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="slide-textbereich">
+            <h3 class="slide-ueberschrift">Digital Music</h3>
+            <h3 class="slide-ueberschrift hidden">Acustic Music</h3>
+            <h3 class="slide-ueberschrift hidden">Live Music</h3>
+          </div>
+          <p class="arrow right">&raquo;</p>
+        </div>
+      </div>
+    </section>
+    <!-- Banner end -->
+    <!-- Music components via append-->
+  </main>
+
+  <!-- FOOTER start -->
+  <!-- Shopping cart and checkout -->
+  <footer class="hidden">
+    <!-- Auflistung der Artikel im Warenkorb -->
+    <h2 class="">Warenkorb</h2>
+    <div class="shoppingCart">
+      <table>
+        <tr>
+          <th>Anzahl</th>
+          <th>Artikel</th>
+          <th>Preis/Artikel</th>
+        </tr>
+      </table>
+    </div>
+    <!-- Anzeige der Summe des Zahlbetrages und Anzahl der Artikel sowie der Buttons -->
+    <p class="sum"></p>
+    <div class="finalBuyBtnDiv">
+      <button class="zocken">Zocken</button>
+      <button class="finalBuyBtn">Jetzt Kaufen</button>
+    </div>
+  </footer>
+  <!-- FOOTER end -->
+
+  <!--form start -->
+  <div class="form notShown">
+    <!-- Nachname -->
+    <div>
+      <label for="nachname">Nachname: </label>
+      <input id="nachname" type="text" placeholder="Nachname" form="novalidate" class="inputValidate nachname">
+      <p class="nachnameParagraph"></p>
+    </div>
+    <!-- Email -->
+    <div>
+      <label for="nachname">Email: </label>
+      <input type="email" placeholder="Email" form="novalidate" class="inputValidate email">
+      <p class="emailParagraph"></p>
+    </div>
+    <!-- Postleitzahl -->
+    <div>
+      <label for="nachname">Postleitzahl: </label>
+      <input type="text" placeholder="PLZ" class="inputValidate plz" pattern="^[0-9]{5}$" form="novalidate"
+        maxlength="5">
+      <p class="plzParagraph"></p>
+    </div>
+    <div>
+      <!-- form end -->
+
+      <!-- memory start -->
+      <div class="memoryOutside">
+        <p class="zockenParagraph hidden">Du hast einen Versuch!</p>
+        <p class="zockenParagraph hidden">Paar = Du zahlst die Hälfte</p>
+        <p class="zockenParagraph hidden">Kein Paar = Du zahlst das Doppelte</p>
+        <div class="memory"></div>
+      </div>
+      <!-- memory end -->
+
+      <!-- Scripts -->
+      <script src="elements.js"></script>
+      <script src="banner.js"></script>
+      <script src="loadData.js"></script>
+      <script src="newComponent.js"></script>
+      <script src="form.js"></script>
+      <script src="shoppingCart.js"></script>
+      <script src="memory.js"></script>
+      <script src="index.js"></script>
+</body>
+
+</html>

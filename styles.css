@@ -1,0 +1,334 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: lightcyan;
+  box-shadow: 1px 1px 10px grey;
+  margin: 0px;
+  margin-bottom: 20px;
+  padding: 0px;
+  height: 60px;
+}
+
+h1 {
+  position: relative;
+  display: inline-block;
+  margin-left: 30%;
+}
+
+h1:hover {
+  transition: transform 2s ease-in-out;
+  transform: rotateX(360deg);
+}
+
+.cart {
+  height: 40px;
+  margin-right: 0px;
+  cursor: pointer;
+}
+
+.cart:hover {
+  height: 50px;
+}
+
+.cartAmount {
+  font-size: 20px;
+  margin-right: 30%;
+}
+
+ul {
+  position: absolute;
+  top: 0px;
+}
+
+li {
+  float: left;
+  margin: 10px;
+  font-size: 50px;
+  list-style-type: circle;
+  color: red;
+}
+
+li:hover {
+  list-style-type: disc;
+}
+
+.liOn {
+  list-style-type: disc;
+}
+
+h3 {
+  text-align: center;
+}
+
+.slideshowOutside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.slideshowInside {
+  max-width: 80%;
+  height: 30vh;
+  position: relative;
+}
+
+.slide {
+  max-width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  box-shadow: 0px 0px 20px grey;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.slide-textbereich {
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  color: red;
+  background: rgba(255, 0, 0, 0.2);
+  padding: 20px 0px;
+}
+
+.slide-ueberschrift {
+  margin: 0px;
+  font-size: 30px;
+}
+
+.arrow {
+  position: absolute;
+  font-size: 50px;
+  color: red;
+  padding: 10px;
+  z-index: 10;
+}
+
+.arrow:hover {
+  color: lightcyan;
+  text-shadow: 0px 0px 20px red;
+}
+
+.left {
+  left: 20px;
+  top: 50%;
+}
+
+.right {
+  right: 20px;
+  top: 50%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 5px 5px 15px grey;
+  border-radius: 10%;
+}
+
+input {
+  width: 50px;
+  margin-right: 10px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+p {
+  padding: 1px;
+  margin: 1px;
+  font-weight: bold;
+  text-align: center;
+}
+
+img {
+  display: block;
+  height: 200px;
+
+  margin: auto auto;
+}
+
+footer {
+  background: lightcyan;
+  margin: 50px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px grey;
+}
+
+td {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0px;
+  font-size: 20px;
+}
+
+tr {
+  line-height: 2;
+  vertical-align: 0;
+}
+
+h2 {
+  padding: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.sum {
+  text-align: right;
+  margin: 50px 50px 20px 0px;
+  font-size: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.abstand {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+button {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 10px grey;
+  background: lightcyan;
+}
+
+.buyBtn {
+  display: block;
+  margin: 20px auto;
+  font-size: 20px;
+}
+
+.buyBtn:hover {
+  background: grey;
+  color: lightcyan;
+  box-shadow: 0px 0px 40px grey;
+}
+
+th {
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.finalBuyBtnDiv {
+  display: flex;
+  justify-content: end;
+}
+
+.finalBuyBtn,
+.zocken {
+  font-size: 20px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+/* Memory */
+.memoryOutside {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.memory {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: repeat(2, 300px);
+  grid-gap: 10px;
+  perspective: 800px;
+}
+
+.card {
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: transform 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+}
+
+.front,
+.back {
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.back {
+  width: 100%;
+  background: lightcyan;
+  backface-visibility: hidden;
+}
+
+.toggleCard {
+  transform: rotateY(180deg);
+}
+
+.zockenParagraph {
+  font-size: 20px;
+}
+
+/* Form Input Validate */
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.inputValidate {
+  font-size: 20px;
+  width: 200px;
+  margin: 10px;
+}
+
+label {
+  width: 80px;
+  display: inline-block;
+}
+
+.nachnameParagraph,
+.emailParagraph,
+.plzParagraph {
+  display: inline;
+}
+
+.notShown {
+  display: none;
+}
